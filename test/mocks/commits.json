@@ -1,0 +1,69 @@
+{
+  "values": [
+    {
+      "id": "abc123",
+      "displayId": "123abc",
+      "author": {
+        "name": "Jane Doe",
+        "emailAddress": "jane@dummy.com",
+        "id": 123,
+        "displayName": "Jane Doe",
+        "active": true,
+        "slug": "janedoe",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://link/to/users/janedoe"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1531504676000,
+      "message": "Commit message 1",
+      "parents": [
+        {
+          "id": "xzy890",
+          "displayId": "xyz213"
+        },
+        {
+          "id": "ghj456",
+          "displayId": "345dfg"
+        }
+      ]
+    },
+    {
+      "id": "qwe789",
+      "displayId": "qwe789",
+      "author": {
+        "name": "John Doe",
+        "emailAddress": "john@dummy.com",
+        "id": 567,
+        "displayName": "John Doe",
+        "active": true,
+        "slug": "johndoe",
+        "type": "NORMAL",
+        "links": {
+          "self": [
+            {
+              "href": "https://link/to/users/johndoe"
+            }
+          ]
+        }
+      },
+      "authorTimestamp": 1531504568000,
+      "message": "Test commit 2",
+      "parents": [
+        {
+          "id": "456yui",
+          "displayId": "456yui"
+        }
+      ]
+    }
+  ],
+  "size": 2,
+  "isLastPage": false,
+  "start": 0,
+  "limit": 2,
+  "nextPageStart": 2
+}
