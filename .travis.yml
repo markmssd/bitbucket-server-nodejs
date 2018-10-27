@@ -3,9 +3,10 @@ sudo: false
 language: node_js
 
 node_js:
+  - "10"
+  - "8"
   - "6"
   - "4"
-  - "0.12"
 
 # Required for NodeJS v4 and higher
 env:
