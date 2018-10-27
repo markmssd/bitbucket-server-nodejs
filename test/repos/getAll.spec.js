@@ -38,7 +38,7 @@ describe('Repos', function () {
 
     var EXPECTED = _.concat([], pageOne.values, pageTwo.values, pageThree.values);
 
-    bitbucketClient.repos.getAll(options)
+    bitbucketClient.repos.getAll(options, [])
       .then(function (repos) {
         // Assert it contains the right ?start= argument
         assert.equal(requestGet.getCall(0).args[ 0 ].uri, 'http://localhost/repos?limit=100');
