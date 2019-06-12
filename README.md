@@ -14,7 +14,7 @@ npm install bitbucket-server-nodejs
 ```
 
 ## Initializing Client
-Supports public, basic auth and OAuth1.
+Supports public, basic auth (either with username/password, or [Personal Access Tokens](https://confluence.atlassian.com/bitbucketserver/personal-access-tokens-939515499.html)) and OAuth1.
 
 Specify auth's type as 'public', 'basic' or 'oauth'. Defaults to 'public'.
 
@@ -29,6 +29,13 @@ var auth = {
     "username": "username",
     "password": "password"
 };
+
+       - OR BASIC AUTH WITH PERSONAL ACCESS TOKEN -
+var auth = {
+    "type": "basic",
+    "bearer": "bearer",
+};
+
                   - OR OAUTH1 -
 var auth = {
     "type": "oauth",
@@ -111,6 +118,12 @@ client.tags.get('~userslug', repoKey); // Promise
 ```
 
 ### pull requests
+
+Get a specific pull request.
+
+```
+client.prs.getSpecific(projectKey, repoSlug, id); // Promise
+```
 
 Get all pull requests for a repo.
 
